@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'IBM Plex Mono', monospace; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.background-lower{
+    width: 100%;
+    height: 100vh;
+    background: rgb(106,3,170);
+    background: linear-gradient(144deg, rgba(106,3,170,1) 0%, rgba(113,221,255,1) 68%);
+}
+
+.background-upper{
+    width: 70%;
+    height: 90%;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 2em rgb(0 0 0 / 0.4);
+    border-radius: 0.2em;
+    position: relative; 
+    top: 5%;
+    left: 15%;
+    display: flex;
+
+    
+
+}
+
+
+.first-half{
+    width: 30%;
+    height: 100%;
+    /* border-right: 5px solid rgb(103, 103, 103); */
+    color: rgb(36, 36, 36);
+}
+
+.my-image-div{
+    width: 90%;
+    height: 50%;
+    position: relative;
+    left: 0.8em;
+    top: 1em;
+    /* border-radius: 50%; */
+    /* box-shadow: 0px 0px 2em rgb(0 0 0 / 0.5); */
+}
+
+.my-image-div img{
+    width: 100%;
+    height: 85%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2em rgb(0 0 0 / 0.5);
+}
+
+.headline{
+    width: 100%;
+    height: 50%;
+    /* background-color: lightblue; */
+     
+    
+}
+
+
+.headline h2{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Gloock', serif;
+    letter-spacing: 0.05em;
+    margin-top: 0;
+    margin-bottom: 1.0em;
+    text-align: center;
+    font-weight: 900;
+    /* font-size: 40rem; */
+
+    /*Ensures the content is not revealed until the animation*/
+    overflow: hidden; 
+    /*The typwriter cursor*/
+    border-right: .1em solid rgb(0, 0, 0); 
+    /*Keeps the content on a single line*/
+    white-space: nowrap; 
+    /*Gives that scrolling effect as the typing happens*/
+    margin: 0 auto 1.0em; 
+    animation:
+        typing 4s forwards;
+    border-right: 0em;
+}
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 80% }
+  }
+
+.headline-icons{
+    width: 1.6em;
+    height: 1.6em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+.uni-icon{
+    vertical-align: top;
+}
+
+.headline-table{ 
+    border-collapse:separate; 
+    border-spacing: 0 1em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+.table-text{
+    font-size: 0.9rem;
+    line-height: 1.8em;
+}
+
+.links{
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+.links:hover{
+    text-decoration:underline;
+}
+
+.second-half{
+    width: 70%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(36, 36, 36);
+    /* position: absolute; */
+    /* right: 0em;
+    top: 0; */
+    /* border-radius: 0.2em; */
+    border-top-right-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+    /* padding: 2%; */
+    
+}
+
+
+
+.quote{
+    font-style: italic;
+    margin-bottom: 1em;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.paragraph{
+    line-height: 1.8em;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+    /* margin-top: 0em;
+    margin-bottom: 0em; */
+    /* animation: fadeIn 2s; */
+}
+
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 100%;}
+}
+
+.horizontal-rule{
+    width: 90%;
+    /* background-color: rgb(200, 200, 200); */
+    border: dashed rgb(200, 200, 200) 4px;
+    border-bottom: none;
+
+    /* border-radius: 2px; */
+}
+
+.second-half h4{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.contact-img{
+    height: 1.5em;
+    width: 1.5em;
+}
+
+
+.contact-div table{ 
+    margin: 0 auto;
+    border-collapse:separate; 
+    border-spacing: 0 1em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+/* MEDIA QUERIES */
+
+@media  (max-width: 1270px) {
+    .headline h2{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media  (max-width: 1240px) {
+    .contact-div table{ 
+        border-spacing: 0 0.25em;   
+    }
+}
+
+@media  (max-width: 1152px) {
+    .contact-div table{  
+        border-spacing: 0 0.25em;
+    }
+    .headline-table{ 
+        border-spacing: 0 0.2em;
+    }
+
+}
+
+
+@media  (max-width: 1110px) {
+    .table-text{
+        font-size: 0.9rem;
+        line-height: 1.3em;
+    }
+
+    .headline-table{ 
+        border-spacing: 0 0.5em;
+    }
+
+    .paragraph{
+        line-height: 1.5em;
+    }
+
+}
+
+@media  (max-width: 1020px) {
+    .headline h2{
+        font-size: 1.0rem;
+    }
+
+      .quote{
+        margin-bottom: 1em;
+        font-size: 0.6rem;
+    }
+
+    .table-text{
+        font-size: 0.75rem;
+        line-height: 1.8em;
+    }
+
+    .second-half{
+        font-size: 0.9rem;
+    }
+
+     
+}
+
+@media  (max-width: 850px) {
+    .headline h2{
+        font-size: 0.8rem;
+    }
+    .table-text{
+        font-size: 0.6rem;
+        line-height: 1.8em;
+    }
+
+    .second-half{
+        font-size: 0.8rem;
+    }
+    .second-half h4{
+        font-size: 0.7rem;
+    }
+    
+   
+}
+
+
+@media  (max-width: 700px) {
+
+    .first-half{
+        width: 100%;
+        height: fit-content;
+        background-color: whitesmoke;
+        margin-bottom: 0.3em;
+        padding-bottom: 1em;
+        
+        border-radius: 5px;
+    }
+
+    .headline h2{
+        margin-top: 2em;
+        font-size: 2rem;
+
+    }
+
+    .table-text{
+        font-size: 0.8rem;
+        line-height: 1.3em;
+    }
+
+    .second-half{
+        width: 100%;
+        height: fit-content;
+        background-color: whitesmoke;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        /* margin-bottom: 5em; */
+        border-radius: 5px;
+    }
+    .quote{
+        margin-top: 2rem;
+    }
+
+    .contact-div{
+        margin-bottom: 1em;
+    }
+
+
+    .background-upper{
+        width: 90%;
+        height: 100%;
+        left: 5%;
+        /* top: 5%; */
+        display: block;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color: transparent;
+        /* padding-bottom: 2em;
+        margin-bottom: 2em; */
+    }
+
+    .background-lower{
+        height: 100%;
+    }
+    
+   
+}
+
+@media  (max-width: 400px) {
+    .headline h2{
+        font-size: 1.5rem;
+    }
+
+    .contact-div table{ 
+        margin: 0 auto;
+        border-collapse:separate; 
+        border-spacing: 0 0em;
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+        font-size: 0.75rem;
+    }
+}
+
+@media  (max-width: 360px) {
+
+    .contact-div table{ 
+        margin: 0 auto;
+        border-collapse:separate; 
+        border-spacing: 0 0em;
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+}
+
+
