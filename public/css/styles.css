@@ -17,7 +17,7 @@ body {
     background: linear-gradient(144deg, rgba(106,3,170,1) 0%, rgba(113,221,255,1) 68%);
 }
 
-.background-upper{
+.background-upper-1{
     width: 70%;
     height: 90%;
     background-color: whitesmoke;
@@ -26,6 +26,35 @@ body {
     position: relative; 
     top: 5%;
     left: 15%;
+}
+
+.copyright{
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-size: 0.8rem ;
+    text-align: right;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 0.8rem;
+}
+
+.copyright a:hover{
+    color: black;
+}
+
+.background-upper{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 2em rgb(0 0 0 / 0.4);
+    border-radius: 0.2em;
+    /* position: relative; 
+    top: 5%;
+    left: 15%; */
     display: flex;
 
     
@@ -319,9 +348,9 @@ body {
 
 
     .background-upper{
-        width: 90%;
+        width: 100%;
         height: 100%;
-        left: 5%;
+        
         /* top: 5%; */
         display: block;
         padding-top: 1em;
@@ -330,11 +359,19 @@ body {
         /* padding-bottom: 2em;
         margin-bottom: 2em; */
     }
+    .background-upper-1{
+        left: 5%;
+        width: 90%;
+        background-color: transparent;
+    }
 
     .background-lower{
         height: 100%;
     }
     
+    .copyright{
+        text-align: center;
+    }
    
 }
 
