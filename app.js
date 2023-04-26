@@ -8,11 +8,11 @@ app.get("/", function(req, res){
 });
 
 app.get("/privacy", function(req, res){
-    res.redirect("/");
+    res.sendFile(__dirname + "/privacy.html");
 });
 
 app.get("/termsofuse", function(req, res){
-    res.redirect("/");
+    res.sendFile(__dirname + "/termsofuse.html");
 });
 
 app.listen(process.env.PORT || 80, function(){
